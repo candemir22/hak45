@@ -6,15 +6,25 @@ async function initMap() {
   const { Map } = (await google.maps.importLibrary('maps'));
   const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
  
-  // The location of a specific place (e.g., Uluru, Australia)
-  const position = { lat: 42.344, lng: 43.031 };
+  
+  const markerElement = document.createElement('div'); // Your custom marker element
 
-  // Create a map centered at the specified position
-  map = new Map(document.getElementById('map'), {
-    zoom: 18,
-    center: position,
-    mapId: 'map',     // Using a demo ID for illustration
-  });
+const marker = new google.maps.marker.AdvancedMarkerElement({
+  map: map,
+  position: { lat: 42.211, lng: 42.2437 },
+  content: markerElement,
+  gmpClickable: true // Make it clickable and accessible
+});
+
+
+markerElement.addEventListener('gmp-click', () => {
+  console.log('Marker clicked!');
+
+});
+
+
+
+  
 }
 
 // Call the function to initialize the map
