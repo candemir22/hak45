@@ -12,7 +12,7 @@ async function initMap() {
   map = new Map(document.getElementById('map'), {
     zoom: 8,
     center: position,
-    mapId: '8b37d7206ccf0121d4414bb0',     // Using a demo ID for illustration
+    mapId: 'map',     // Using a demo ID for illustration
   });
 }
 
