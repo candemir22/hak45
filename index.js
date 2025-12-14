@@ -6,11 +6,11 @@ async function initMap() {
   const { Map } = (await google.maps.importLibrary('maps'));
   const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
   // The location of a specific place (e.g., Uluru, Australia)
-  const position = { lat: 42.344, lng: 42.031 };
+  const position = { lat: 42.344, lng: 43.031 };
 
   // Create a map centered at the specified position
   map = new Map(document.getElementById('map'), {
-    zoom: 8,
+    zoom: 18,
     center: position,
     mapId: 'map',     // Using a demo ID for illustration
   });
