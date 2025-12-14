@@ -4,10 +4,10 @@ let map;
 async function initMap() {
   // Request the "maps" library dynamically
   const { Map } = (await google.maps.importLibrary('maps'));
-  const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
+  //const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
  
   
-  const markerElement = document.createElement('div'); // Your custom marker element
+  const advanced-marker = document.createElement('marker'); // Your custom marker element
 
 const marker = new google.maps.marker.AdvancedMarkerElement({
   map: map,
