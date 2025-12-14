@@ -13,7 +13,7 @@
         ({key: "AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8", v: "weekly"});</script>
 	  <gmp-map center="42.773,42.01" zoom="7" map-id="8b37d7206ccf0121d4414bb0"> 
   <gmp-advanced-marker
-    position="37.7749, -122.4194"
+    position="42.7749,42.4194"
     title="My Clickable Marker"
     gmp-clickable // Makes the marker clickable
   ></gmp-advanced-marker>
@@ -21,9 +21,6 @@
 		  
 		  
 		  <script>
-	document.getElementById("sat").onclick = function() {
-  alert("Button clicked!");
-		 
   marker.addListener('gmp-click', (event) => {
     console.log('Marker clicked!');
     // Access data:
@@ -31,11 +28,12 @@
     // Run your custom function here, e.g., open an info window
     // showInfoWindow(event.target.position);
   });
-};
+
 </script>
 	  
   </body>
 </html>
+
 
 
 
